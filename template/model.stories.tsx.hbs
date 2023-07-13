@@ -1,0 +1,23 @@
+// {{kebabCase name}}.stories.tsx
+
+import React from 'react';
+
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import {{properCase name}} from './{{kebabCase name}}';
+
+export default {
+  title: 'Components/{{properCase name}}',
+  component: {{properCase name}},
+  argTypes: {}
+} as ComponentMeta<typeof {{properCase name}}>;
+
+export const Story: ComponentStory<typeof {{properCase name}}> = props => <{{properCase name}} {...props} />
+
+Story.args = {
+  children: <h1>Hello {{properCase name}}</h1>
+}
+
+Story.story = {
+  name: "{{properCase name}}"
+};
