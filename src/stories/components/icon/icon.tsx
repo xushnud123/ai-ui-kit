@@ -6,6 +6,8 @@ export interface IconProps {
   children: React.ReactNode;
 }
 
-const Icon: React.FC<IconProps> = ({ children }) => <div className={cls.wrapper}>{children}</div>;
+const Icon: React.FC<IconProps> = ({ children }) => (
+  <div className={cls.wrapper}>{children}</div>
+);
 
 export default Icon;
