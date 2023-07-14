@@ -1,5 +1,5 @@
 plopfile.mjs
-
+storybook-static
 /src/app
 node_modules/*
 tools/*

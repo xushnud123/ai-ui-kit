@@ -1,7 +1,12 @@
 {
   "name": "ai-ui-kit",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": [
+    "pages",
+    "public",
+    "storybook-static"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +19,8 @@
     "gen": "plop",
     "prepare": "husky install",
     "format": "prettier --write \"{src,tools,public}/**/*.{json,ts,tsx,js,jsx,md,scss,css,html}\"",
-    "build:storybook": "npm run build-storybook"
+    "build:storybook": "npm run build-storybook -s public",
+   "serve-storybook": "serve storybook-static"
   },
   "dependencies": {
     "@types/node": "20.4.2",
