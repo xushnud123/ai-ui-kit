@@ -7,13 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:css":"stylelint **/*.{scss,css}",
+    "lint:css": "stylelint **/*.{scss,css}",
     "lint:css:fix": "stylelint --fix **/*.{scss,css}",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "gen": "plop",
     "prepare": "husky install",
-    "format": "prettier --write \"{src,tools,public}/**/*.{json,ts,tsx,js,jsx,md,scss,css,html}\""
+    "format": "prettier --write \"{src,tools,public}/**/*.{json,ts,tsx,js,jsx,md,scss,css,html}\"",
+    "build:storybook": "npm run build-storybook"
   },
   "dependencies": {
     "@types/node": "20.4.2",
@@ -75,6 +76,10 @@
     "husky": "^8.0.3",
     "plop": "^3.1.2",
     "prettier": "^3.0.0",
+    "rollup": "^3.26.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.35.0",
     "storybook": "^7.0.27",
     "stylelint": "^15.10.1",
     "stylelint-config-css-modules": "^4.2.0",
