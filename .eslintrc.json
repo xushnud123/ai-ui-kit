@@ -4,14 +4,14 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["next", "airbnb-typescript"],
+  "extends": ["next", "airbnb-typescript", "plugin:prettier/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["unused-imports", "simple-import-sort"],
+  "plugins": ["unused-imports", "simple-import-sort", "prettier"],
   "rules": {
     "import/first": "error",
     "import/prefer-default-export": "off",
@@ -25,7 +25,13 @@
           // react
           // Packages.
           // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-          ["^react$", "^react-dom$", "^react-router$", "^react-router-dom$", "^@?\\w"],
+          [
+            "^react$",
+            "^react-dom$",
+            "^react-router$",
+            "^react-router-dom$",
+            "^@?\\w"
+          ],
           ["^containers(/.*|$)"],
           ["^hooks(/.*|$)"],
           ["^components(/.*|$)"],

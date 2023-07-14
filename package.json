@@ -24,7 +24,7 @@
     "sass": "^1.63.6",
     "typescript": "*"
   },
-   "eslintConfig": {
+  "eslintConfig": {
     "overrides": [
       {
         "files": [
@@ -34,7 +34,11 @@
           "import/no-anonymous-default-export": "off"
         }
       }
-    ]
+    ],
+    "rules": {},
+    "parserOptions": {
+      "ecmaFeatures": {}
+    }
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.4.10",
@@ -52,10 +56,12 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-next": "^13.4.10",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -63,6 +69,7 @@
     "eslint-plugin-storybook": "^0.6.12",
     "eslint-plugin-unused-imports": "^3.0.0",
     "plop": "^3.1.2",
+    "prettier": "^3.0.0",
     "storybook": "^7.0.27"
   },
   "main": "index.js",
